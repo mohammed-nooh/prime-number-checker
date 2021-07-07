@@ -5,7 +5,7 @@ const msg=chalk.yellow.bold;
 const warning=chalk.red.bold;
 const correct=chalk.green.bold;
 const head=chalk.redBright.bold;
-var p=true;
+var prime=true;
 
 console.log(head("Program to find if DOB is prime or not\n"));
 
@@ -35,7 +35,7 @@ else{
 
   for(var i=2;i<newDate;i++){
     if(newDate%i==0){
-      p=false;
+      prime=false;
       break;
     }
   }
@@ -44,7 +44,7 @@ else{
   // output part
   //=============
 
-  if(p){
+  if(prime){
     console.log(correct("\nYour DOB is a prime number"));
     console.log(msg("\nIf you liked this please share this on social media"))
   }
